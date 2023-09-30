@@ -1,0 +1,64 @@
+::selection {
+  background: #ffe5e5;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Young Serif", serif;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.blue-bg {
+  background-color: #5d12d2;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.pink-bg {
+  background-color: #ff6ac2;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.title {
+  font-size: 12rem;
+  line-height: 5rem;
+  color: white;
+}
+
+.main-cta {
+  text-decoration: none;
+  color: white;
+  padding: 1.5rem;
+  border: 2px outset black;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.flower {
+  position: absolute;
+  top: 30vh;
+  left: 20vw;
+  animation: spin 6s linear infinite;
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.flower:hover {
+  animation-play-state: running;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
